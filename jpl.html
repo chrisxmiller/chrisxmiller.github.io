@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Chris Miller: Portfolio</title>
+		<link rel="icon" href="images/favicon.ico">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="image avatar"><img src="images/headshot.jpg" alt="Chris Miller's Face" /></a>
+					<h1><strong>I'm Chris</strong>, and I built a<br />
+					gesture recognition system.</h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="Intro">
+						<h2>Firmware and Hardware for the JPL BioSleeve V2</h2>
+						<p><span class="image left"><img src="images/homeimgs/jpl.jpg" alt="Image from NASA-JPL." /></span> 
+							The JPL BioSleeve is a system for classifying static and dynamic hand gestures for eventual use in space suits to control robots. The BioSleeve measures forearm surface potentials via EMG
+							and measures movement via an IMU. The version of the BioSleeve I helped to improve used a custom DAC system to measure the forearm surface potentials and wirelessly send signals to a computer
+							running a classifier to determine the gesture being produced. 	 
+						</p>
+						<p>
+							I programmed the BioSleeve V2's new DAQ as my summer 2014 project. The custom DAQ used a 16-bit ADC and a PIC32 microcontroller to measure the surface potentials. I wrote the firmware for 
+							the PIC in C++ that would control the ADC, sample the surface potentials, filter the measurements, and transmit them to the adjacent computer wirelessly. I also 
+							integrated the system's Bluetooth module and assembled the sleeve's 32 active electrodes. Further, I wrote a series of drivers for in both Python and MATLAB to integrate the BioSleeve's new
+							DAQ system with the existing classification software. 
+						</p>
+					</section>
+
+				<!-- Two -->
+					<section id="Further Information">
+						<h2>Further Information</h2>
+						<p> I worked on this project while I was a summer undergraduate research fellow at <a href="https://www.jpl.nasa.gov/"> NASA's Jet Propulsion Laboratory</a>. JPL
+							is known for, among other things, its Mars rover robots including Sojourner, Spirit, Opportunity, and Curiosity. I interned in <a href="https://robotics.jpl.nasa.gov/groups/ActuationAndSensing/">section 347A</a> in 
+							 <a href="https://robotics.jpl.nasa.gov/groups/summerEmployees.cfm?FuseAction=ShowSummerEmployees&Year=2014">Summer 2014</a> and worked
+							under Dr. Chris Assad. The BioSleeve was mentioned in <a href="https://spectrum.ieee.org/automaton/robotics/robotics-hardware/jpl-biosleeve-enables-precise-robot-control-through-hand-and-arm-gestures">IEEE Spectrum</a> and 
+							I was <a href="https://ieeexplore.ieee.org/abstract/document/7219668">acknowledged</a> in a technical review paper for my contributions. 
+							My project's <a href="assets/Hardware Development for the JPL BioSleeve.pdf">abstract</a> 
+							was included in the 2014 Caltech SURF program. 
+						</p>
+					</section>
+
+				<!-- Three -->
+			        <section>
+						<div class="row">
+                            <div class="col-6 col-12-xsmall">
+                                <h2>Skills and Tools Used</h2>
+                                <ul class="alt">
+                                    <li>Circuit Assembly</li>
+									<li>Circuit Testing</li>
+									<li>PIC Microcontrollers, C++</li>
+									<li>MATLAB and Python</li>
+                                </ul>
+							</div>
+							
+							<div class="col-6 col-12-xsmall">
+                                <h2>Awards</h2>
+                                <ul class="alt">
+                                    <li>PA Space Grant Consortium: Research and Travel Grant</li>
+                                </ul>
+                            </div>
+						</div>
+						<div class="col-6">
+							<ul class="actions">
+								<li><a href="index.html" class="button">Return Home</a></li>
+							</ul>
+						</div>
+                    </section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/chrisxmiller" class="fab fa-github"></a></li>
+						<li><a href="mailto:chris.x.miller@gmail.com" class="fas fa-envelope"></a></li>
+						<li><a href="https://www.linkedin.com/in/chrisxmiller/" class="fab fa-linkedin-in "></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Chris Miller</li><li>2020</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
