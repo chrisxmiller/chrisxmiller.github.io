@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Chris Miller: Portfolio</title>
+		<link rel="icon" href="images/favicon.ico">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="image avatar"><img src="images/headshot.jpg" alt="Chris Miller's Face" /></a>
+					<h1><strong>I'm Chris</strong>, and I improved<br />
+					wheelchair battery monitoring.</h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="Intro">
+						<h2>A State-of-Charge Estimator for a Semi-Autonomous Electric Wheelchair</h2>
+						<p><span class="image left"><img src="images/homeimgs/wcbat.jpg" alt="Image from argallab." /></span> 
+                            This project sought to develop an improved State-of-Charge (SOC) estimator for wheelchair battery packs. Presently, many wheelchairs measure the battery's voltage to display the battery SOC. This is dangerous 
+                            because the pack voltage alone neither considers the battery's non-linear charge curve nor the battery dynamics. I sought to improve this by developing a piece-wise linear Kalman filtering method that realized
+                            a coulomb accumulator in the non-linear regions of the battery's discharge curve and a linear Kalman filter in the battery's linear region. I achieved estimation error of 0.85%.
+						</p>
+						<p><span class="image right"><img src="images/projects/batcurve.png" alt="Image from argallab." /></span> 
+                            For this project, I first designed a voltage and a current monitoring circuit for the battery pack. Then, I characterized a wheelchair's battery back by finding it's open-circuit voltage state-of-charge curve and
+                            the battery's 2nd order dynamics. Using this information, I generated a 2nd order battery model and verified the model in simulation. In practice, I validated my model by driving the wheelchair around in a pattern
+                            similar to that of the average college student. All of the code for collecting data was developed in Python with ROS. All of the code to process the data was developed in MATLAB.  
+						</p>	
+					</section>
+
+				<!-- Two -->
+                <section id="Further Information">
+                    <h2>Further Information</h2>
+                    <p> I worked on this project while I was an undergraduate researcher at Penn State University working in <a href="https://www.me.psu.edu/department/directory-detail-g.aspx?q=SNB10">Dr. Sean Brennan's</a>
+                    <a href="https://www.mne.psu.edu/ToBoldlyGo/">Intelligent Vehicles and Systems Group</a>. This work resulted in part of my <a href="assets/thesis.pdf">undergraduate thesis</a>, a Penn State undergraduate
+                    research symposium <a href="assets/poster2.pdf">poster</a>, and authorship on a <a href="assets/paper1.pdf">conference paper</a>. I presented this work at the <a href="assets/presentation1.pdf">DSCC 2016</a> in Minneapolis, MN.
+                    </p>
+                </section>
+
+
+				<!-- Three -->
+			        <section>
+						<div class="row">
+                            <div class="col-6 col-12-xsmall">
+                                <h2>Skills and Tools Used</h2>
+                                <ul class="alt">
+									<li>Python, C++, ROS</li>
+									<li>Model-Based Estimation, Kalman Filters</li>
+									<li>MATLAB</li>
+									<li>Battery Modeling and Characterization</li>
+                                </ul>
+							</div>
+							<div class="col-6 col-12-xsmall">
+                                <h2>Awards and Press</h2>
+                                <ul class="alt">
+									<li><a href="https://news.psu.edu/story/374290/2015/10/08/academics/electrical-engineering-student-does-collaborative-work-robotics">Penn State EECS Press Release</a></li>
+									<li><a href="assets/recruiting.pdf">Penn State Nationwide Recruiting Materials</a></li>
+									<li>Penn State University Rodney A. Erickson Summer Discovery Grant</li>
+                                </ul>
+                            </div>
+							
+						<div class="col-6">
+							<ul class="actions">
+								<li><a href="index.html" class="button">Return Home</a></li>
+							</ul>
+						</div>
+                    </section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/chrisxmiller" class="fab fa-github"></a></li>
+						<li><a href="mailto:chris.x.miller@gmail.com" class="fas fa-envelope"></a></li>
+						<li><a href="https://www.linkedin.com/in/chrisxmiller/" class="fab fa-linkedin-in "></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Chris Miller</li><li>2020</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
