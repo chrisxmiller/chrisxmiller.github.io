@@ -18,8 +18,8 @@
 			<header id="header">
 				<div class="inner">
 					<a href="index.html" class="image avatar"><img src="images/headshot.jpg" alt="Chris Miller's Face" /></a>
-					<h1><strong>I'm Chris</strong>, and I designed an<br />
-					autonomy switching algoritm.</h1>
+					<h1><strong>I'm Chris</strong>, and I analyzed<br />
+					robot arm task-features.</h1>
 				</div>
 			</header>
 
@@ -28,12 +28,16 @@
 
 				<!-- One -->
 					<section id="Intro">
-						<h2>Autonomy Shifting for Autonomous Wheelchairs</h2>
-						<p><span class="image left"><img src="images/homeimgs/shifting.png" alt="Image from argallab." /></span> 
-							Often individuals with mobility impairments would like help when controlling their assistive devices but, not <i>too much</i> help. This project seeks to determine when to automatically shift between different, 
-							discrete levels-of-autonomy for users driving an autonomous wheelchair. Each level-of-autonomy provides different levels of assistance to the user to assist them in navigating different obstacle courses. For this 
-							project, a study was run on 16 human subjects. The subjects could request changes in assistance while they navigated different obstacle courses. As they navigated the courses, the wheelchair measured information about the 
-							user's control command quality and the environment. These measurements, as well as the user's requests, are being used to train a machine learning model to classify when to shift between different levels of autonomous assistance.
+						<h2>Task Characterization for Human-Robot Autonomy Allocation</h2>
+						<p><span class="image left"><img src="images/homeimgs/task.png" alt="Image from argallab." /></span> 
+							In human-robot teams, some tasks are easier than others to perform. This work sought to discover some of the underlying mechanisms that make completing some tasks more difficult than others. For this paper, we 
+							had twenty people complete thirteen different grasphing tasks with a robot arm. Each person completed each task both with and without autonomous assistance to determine which features of robotic arm control -
+							rotations or translations about the x-y-z axes - are most difficult. We concluded that rotational features were the most difficult and would likely benefit most from autonomous interventions. 
+						</p>
+						<p><span class="image right"><img src="images/projects/task-features.png" alt="Image from argallab." /></span> 
+							For this project, I helped to refine the paper's scope and the experimental design necessary to characterize task-feature difficulty. Furthermore, I utilized an in-house potential fields library to implement 
+							the controller for the MICO 6-DOF robot arm; the controller was implemented using Python and ROS. I also worked closely with the lead author to collect the data for all twenty candidates. Finally, I wrote 
+							a section of the paper and contributed to the editing process. 
 						</p>	
 					</section>
 
@@ -42,7 +46,7 @@
 						<h2>Further Information</h2>
 						<p> I worked on this project while I was a graduate student at Northwestern University working as a member of the <a href="https://www.argallab.northwestern.edu/"> argallab</a>. The argallab seeks to apply robotics autonomy 
 							to assistive technology	to improve the lives of the differently abled. This lab resides within the <a href="https://www.sralab.org/"> Shirley Ryan AbilityLab</a>, the nation's perimer rehabilitaion hospital. 
-							This ongoing project will be the topic of my master's thesis. 
+							This project resulted in a co-authorship on an ICRA 2019 <a href="assets/paper4.pdf"> conference article</a>. 
 						</p>
 					</section>
 
@@ -54,9 +58,8 @@
                                 <ul class="alt">
 									<li>Python, C++, ROS</li>
 									<li>Design of Human Trials, IRB</li>
-									<li>Time Series Data Engineering</li>
-									<li>Classical Machine Learning (scikit-learn)</li>
-									<li>Deep Neural Networks, KERAS, TensorFlow</li>
+									<li>Robotic Arm Control</li>
+									<li>Potential Fields</li>
                                 </ul>
 							</div>
 							<div class="col-6 col-12-xsmall">
