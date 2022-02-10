@@ -157,7 +157,7 @@
 									<p>Models were trained using <a href="https://www.cs.waikato.ac.nz/~ml/weka/">Weka</a> using 10-fold cross-validation. The training methods investigated were: </p>
 									<ul class="feature-icons">
 										<li class="fa-angle-right">Naieve Bayes</li>
-										<li class="fa-angle-right">Logistical Regression</li>
+										<li class="fa-angle-right">Logistic Regression</li>
 										<li class="fa-angle-right">Decision Trees</li>
 										<li class="fa-angle-right">Neural Networks</li>
 										<li class="fa-angle-right">Nearest Neighbor</li>
@@ -172,7 +172,7 @@
 							<section id="res">
 								<div class="container">
 									<h3>Results: Part One</h3>
-									<p> Yhe best classifiers, logistical regression and a Neural Network with 50 hidden layers, were able to beat the baseline (ZeroR) by 20%. Useful classification was not derived from the Top38 label set, so, it will not be discussed.
+									<p> The best classifiers, logistic regression and a Neural Network with 50 hidden layers, were able to beat the baseline (ZeroR) by 20%. Useful classification was not derived from the Top38 label set, so, it will not be discussed.
 									The most important feature for classification was the length of the dataset. In other words,
 									the longer a person required to complete a task, the greater its difficulty. However, since task length isn't known until task completion, the models were retrained without this feature. The same classifiers were the best performers, 
 									however, they only beat the baseline by 10%. The most important features after duration were the number of outliers and the features describing outliers. While peak accuracy compared to ZeroR on the best models fell to 10%, this still 
@@ -217,7 +217,7 @@
 							<section id="conc">
 								<div class="container">
 									<h3>Conclusions</h3>
-									<p>For method one, using both statistical and user-generated features, the highest classification accuracy discovered was just above 60% using either logistical regression or a neural network when not considering the length of the data set</p>
+									<p>For method one, using both statistical and user-generated features, the highest classification accuracy discovered was just above 60% using either logistic regression or a neural network when not considering the length of the data set</p>
 									<p>For method two, the best performance observed using an LSTM occurred when using the twice-filtered data and 50 to 100 LSTM units. The performance was just above 60%, similar to the performance observed in method one. More advanced smoothing/filtering 
 									methods may improve classification accuracy.</p>
 									<p> Both methods lead to the following conclusions: </p>
