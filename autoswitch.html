@@ -30,15 +30,18 @@
 					<section id="Intro">
 						<h2>Autonomy Shifting for Autonomous Wheelchairs</h2>
 						<p><span class="image left"><img src="images/homeimgs/shifting.png" alt="Image from argallab." /></span> 
-							Often individuals with mobility impairments would like help when controlling their assistive devices but, not <i>too much</i> help. This project seeks to determine when to automatically shift between different, 
+							Often individuals with mobility impairments would like help when controlling their assistive devices but, not <i>too much</i> help. This project sought to construct a framework to determine when to automatically shift between different, 
 							discrete levels-of-autonomy for users driving an autonomous wheelchair. Each level-of-autonomy provides different levels of assistance to the user to assist them in navigating different obstacle courses. For this 
-							project, a study was run on 16 human subjects. The subjects could request changes in assistance while they navigated different obstacle courses. As they navigated the courses, the wheelchair measured information about the 
-							user's control command quality and the environment. These measurements, as well as the user's requests, were used to train machine learning models to classify when to shift between different levels of autonomous assistance.
-						</p>	
-
-						<p> This project's results and my thesis shall be posted here after the manuscript has been submitted and reviewed. The manuscript, under edits as of December 2020, and will be submitted to IROS-RAL 2021.  
+							project, a study was run on 16 human subjects. The subjects could request changes in assistance while they navigated different obstacle courses. As they navigated the courses, the wheelchair collected information from the human, the environment, and 
+							its own planner. Machine learning methods - both classical and deep learning - were trained on the collected information streams (human, robot, environment, human-robot interaction) to determine the which information streams were 
+							most useful at classifying when to shift between levels of autonomy. 
 						</p>
-
+						<p>	
+							It was shown that information from the interaction between the human and the robot were most informative in predicting when to shift between autonomy levels. Further, this work showed that features learned by deep networks, in comparison to
+							hand-engineered features, proved variable in their ability to represent autonomy switching relevant information. Finally, this work also demonstrated the utility of human-only information streams for shared-control frameworks. Almost all of this work
+							was completed using Python. Programming the wheelchair relied on ROS and the machine learning relied on TensorFlow, KERAS, scikit-learn, and pandas.
+							
+						</p>	
 
 					</section>
 
@@ -46,8 +49,10 @@
 					<section id="Further Information">
 						<h2>Further Information</h2>
 						<p> I worked on this project while I was a PhD student student at Northwestern University working as a member of the <a href="https://www.argallab.northwestern.edu/"> argallab</a>. The argallab seeks to apply robotics autonomy 
-							to assistive technology	to improve the lives of the differently abled. This lab resides within the <a href="https://www.sralab.org/"> Shirley Ryan AbilityLab</a>, the nation's perimer rehabilitaion hospital. 
-							This project was the topic of my masters thesis. 
+							to assistive technology	to improve the lives of the differently abled. This lab resides within the <a href="https://www.sralab.org/"> Shirley Ryan AbilityLab</a>, the nation's perimer rehabilitaion hospital. This work was
+							published in IEEE IROS 2021 <a href="https://cpb-us-e1.wpmucdn.com/sites.northwestern.edu/dist/5/1812/files/2021/08/21iros_miller.pdf"> and one may read the article here</a>. Furthermore, this work also resulted in my master's thesis,
+							 <a href="assets/Masters_Thesis.pdf"> which may be found here</a>.	The work presented in both documents is framed differently because the article was written ~6 months after the thesis. This break allowed for a new perspective 
+							 on the research and resulted the refined work presented at IROS'21. Both documents on the same data and results.  
 						</p>
 						<p>	
 							While at Northwestern, I won the US Department of Defense's National Defense Science and Engineering Graduate fellowship (NDSEG) 
